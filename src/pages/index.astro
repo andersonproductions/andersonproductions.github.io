@@ -1,16 +1,87 @@
 ---
+import { getCollection } from "astro:content";
+import HomeHero from "../components/HomeHero.astro";
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 
+const work = await getCollection("work");
+const works = work.splice(0,5)
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="Anderson Productions"
+  category=""
+  description=""
+  keywords=""
+  openGraph={{
+    title: "",
+  }}
+  twitter={{
+    card: "summary_large_image",
+  }}
+  nav_pos="left"
+  bg="white"
+>
+  <main>
+    <HomeHero />
+    <section id="recents" class=" bg-night text-white_smoke">
+      <div class="marquee w-[100vw] flex flex-nowrap gap-20 py-5 overflow-clip">
+        <h1 class="marquee flex-nowrap shrink-0 font-extenda_light text-5xl uppercase">Recent Projects</h1>
+      </div>
+      <div>
+{
+  works.map((e)=>{
+    return <ProjectCard slug={e.slug} title={e.data.title} image={e.data.image} tags={e.data.tags} />
+  })
+}
+      </div>
+    </section>
+    <section
+      class="flex flex-col bg-orange_web text-white_smoke justify-center items-center text-center"
+      style="height: 100vh;"
+    >
+      <h1 class="text-center text-8xl uppercase font-extenda_headings">
+        Who are<br />Anderson Productions?
+      </h1>
+      <p class="px-7">
+        Anderson Productions is the creative powerhouse led by photographer,
+        director, writer, and presenter, Thibaut Anderson. Specialising in
+        sports and landscape photography, Thibaut captures the essence of
+        movement and nature with an eye for detail and a passion for
+        storytelling.
+      </p>
+    </section>
+    <section
+      class="flex flex-col bg-night text-white_smoke justify-center items-center text-center"
+      style="height: 100vh;"
+    >
+      <h1 class="text-center text-8xl uppercase font-extenda_headings">
+        Interested in working<br />together
+      </h1>
+      <h2>
+        DM us <span class="uppercase">
+          <a href="https://instagram.com/anderson_productions"
+            >@anderson_productions</a
+          >
+        </span>
+      </h2>
+    </section>
+  </main>
+</Layout>
+<script>
+  import MarqueeContent from "marquee-content";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/all";
+  gsap.registerPlugin(ScrollTrigger);
+  //@ts-expect-error
+  MarqueeContent.registerGSAP(gsap, ScrollTrigger);
+
+  document.querySelectorAll(".marquee").forEach((element) => {
+    const marquee = new MarqueeContent({
+      //@ts-expect-error
+      element
+    });
+
+    marquee.init();
+  });
+</script>

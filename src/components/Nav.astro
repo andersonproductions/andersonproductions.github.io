@@ -1,0 +1,32 @@
+---
+interface Props {
+  nav_pos: "left" | "right";
+  bg:"white"|"black"
+}
+const { nav_pos,bg } = Astro.props;
+import Logo from "./Logo.astro";
+---
+
+<nav class={`fixed w-[100vw] z-30 ${nav_pos === "left" ? "justify-end" : "justify-start"}`} style={`${nav_pos === "left" ? "display: flex; justify-content: flex-start;" : "display: flex; justify-content: flex-end;"}${bg === "black" ? "color: #EFF1ED;" : "color: #101211;"} `}>
+    <a href="/" class="px-3 py-8 nav-logo flex justify-center" style="width: 100%;">
+        <Logo />
+    </a>
+</nav>
+<script>
+    import gsap from "gsap";
+    import { CustomEase } from "gsap/all";
+    gsap.registerPlugin(CustomEase)
+    let nav = document.querySelector(".nav-logo");
+    //@ts-expect-error
+    const navHeight = nav?.offsetHeight ?? 0;
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > navHeight) {
+        gsap.to(nav, {
+            width:'30%',
+            duration: 0.18,
+        });
+      } else {
+        gsap.to(nav, { width:'100%' });
+      }
+    });
+</script>

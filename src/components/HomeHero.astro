@@ -1,0 +1,146 @@
+---
+import HeroImages from "./HeroImages.astro";
+const imageUrls = ["/2023/00.jpeg", "/2024/00.jpg", "/2024/01.png"];
+---
+
+<section class="hero_wrap overflow-clip">
+  <div id="container" class="h-[100vh] w-[100vw]"></div>
+  <div class="hidden">
+    <div>
+      {
+        imageUrls.map((e) => {
+          <HeroImages src={e} alt="phto" />;
+        })
+      }
+    </div>
+  </div>
+</section>
+<script>
+  //   import gsap from "gsap";
+
+  //   var currentIndex = 0;
+  //   const heroWraps = document.querySelectorAll(".hero_wrap");
+  //   const imageUrls = ["/2023/00.jpeg", "/2024/00.jpg"];
+
+  //   heroWraps.forEach((heroWrap) => {
+  //     const container = heroWrap.querySelector("#container");
+
+  //     let xPosition = 0;
+  //     let yPosition = 0;
+
+  //     heroWrap.addEventListener("mousemove", function (e) {
+  //       if (
+  //         Math.abs(xPosition - e.pageX) > 80 ||
+  //         Math.abs(yPosition - e.pageY) > 80
+  //       ) {
+  //         xPosition = e.pageX;
+  //         yPosition = e.pageY;
+
+  //         const randomImageUrl = imageUrls[currentIndex];
+
+  //         // Increment currentIndex and use modulo operator to ensure it stays within bounds
+  //         currentIndex = (currentIndex + 1) % imageUrls.length;
+
+  //         // Create a new image element
+  //         const image = new Image();
+  //         image.src = randomImageUrl;
+
+  //         // Create a new div element to wrap the image
+  //         const imageWrap = document.createElement("div");
+  //         imageWrap.appendChild(image);
+
+  //         // Append the image wrap to the container
+  //         container.appendChild(imageWrap);
+  //         gsap.set(imageWrap, { x: xPosition, y: yPosition, opacity: 0 });
+  //         gsap
+  //           .timeline({
+  //             onComplete: () => {
+  //               imageWrap.remove();
+  //             },
+  //           })
+  //           .to(imageWrap, { opacity: 1, duration: 0.3 })
+  //           .to(imageWrap, { display: "none", duration: 2 }, "+=1");
+  //       }
+  //     });
+  //   });
+  import gsap from "gsap";
+
+  var currentIndex = 0;
+  const heroWraps = document.querySelectorAll(".hero_wrap");
+  const imageUrls = ["/2023/00.jpeg", "/2024/00.jpg", "/2024/01.png"];
+  const maxElements = 7; // Maximum number of elements to keep
+  const a = 100;
+  heroWraps.forEach((heroWrap) => {
+    const container = heroWrap.querySelector("#container");
+    heroWrap.querySelectorAll(".preview-img").forEach((e) => {
+      e.remove();
+    });
+    let xPosition = 0;
+    let yPosition = 0;
+    //@ts-expect-error
+    const imageWraps = []; // Array to keep track of image wraps
+
+    heroWrap.addEventListener("mousemove", function (e) {
+      if (
+        //@ts-expect-error
+        Math.abs(xPosition - e.pageX) > a ||
+        //@ts-expect-error
+        Math.abs(yPosition - e.pageY) > a
+      ) {
+        //@ts-expect-error
+        xPosition = e.pageX;
+        //@ts-expect-error
+        yPosition = e.pageY;
+
+        const randomImageUrl = imageUrls[currentIndex];
+
+        // Increment currentIndex and use modulo operator to ensure it stays within bounds
+        currentIndex = (currentIndex + 1) % imageUrls.length;
+
+        // Create a new image element
+        const image = new Image();
+        image.src = randomImageUrl;
+
+        // Create a new div element to wrap the image
+        const imageWrap = document.createElement("div");
+        imageWrap.appendChild(image);
+
+        // Append the image wrap to the container
+        //@ts-expect-error
+        container.appendChild(imageWrap);
+        gsap.set(imageWrap, { x: xPosition, y: yPosition, opacity: 0 });
+
+        // Add the new image wrap to the tracking array
+        imageWraps.push(imageWrap);
+
+        // Remove the oldest image wrap if we exceed the maxElements limit
+        if (imageWraps.length > maxElements) {
+          //@ts-expect-error
+          const oldestImageWrap = imageWraps.shift();
+          oldestImageWrap.remove();
+        }
+
+        // Animate the new image wrap
+        gsap
+          .timeline({
+            onComplete: () => {
+              // Optional: Handle any additional cleanup if needed
+            },
+          })
+          .to(imageWrap, { opacity: 1, duration: 0.3 });
+      }
+    });
+  });
+</script>
+<style>
+  .hero_wrap {
+    img {
+      position: absolute;
+      height: 20rem;
+      transform: translate(-51%, -50%);
+      pointer-events: none;
+      filter: saturate(0);
+      z-index: 2;
+    }
+  }
+</style>

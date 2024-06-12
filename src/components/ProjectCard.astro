@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  tags: Array<string>;
+  image: {
+    src: string;
+    alt: string;
+  };
+  slug: string;
+}
+
+const { title, tags, image, slug } = Astro.props as Props;
+---
+
+<a
+  class="py-11 px-9 relative odd:bg-coquelicot item-card flex bg-myrtle_green uppercase"
+  data-img={image.src}
+  href={`/work/${slug}`}
+>
+  <h1 class="font-extenda_headings text-5xl z-20">{title}</h1>
+  <sup class="font-roboto_mono font-medium z-20">{tags[0]}</sup>
+</a>
