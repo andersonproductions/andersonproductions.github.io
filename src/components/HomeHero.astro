@@ -1,10 +1,11 @@
 ---
 import HeroImages from "./HeroImages.astro";
+import MobileHomeHero from "./MobileHomeHero.astro";
 const imageUrls = ["/2023/00.jpeg", "/2024/00.jpg", "/2024/01.png"];
 ---
-
+<MobileHomeHero/>
 <section class="hero_wrap overflow-clip">
-  <div id="container" class="h-[100vh] w-[100vw]"></div>
+  <div id="container" class="h-[100vh] w-[100vw] hidden lg:block"></div>
   <div class="hidden">
     <div>
       {

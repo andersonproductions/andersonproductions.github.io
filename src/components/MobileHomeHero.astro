@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+
+const imageUrls = ["/2023/00.jpeg", "/2024/00.jpg", "/2024/01.png"];
+const photos = await getCollection('photos')
+---
+
+<section class="hero-mob h-[400vh] flex justify-between items-start lg:hidden">
+  <div class="w-full h-[100vh] flex items-center justify-center sticky top-0">
+    <div class="w-2/5 relative h-56 scale-150">
+      {
+        photos.map((e) => {
+          return (
+            <img
+              class="absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover even:scale-125 saturate-0"
+              src={e.data.url}
+              alt={e.data.alt}
+            />
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+<script>
+  import { gsap, ScrollTrigger } from "gsap/all";
+  gsap.registerPlugin(ScrollTrigger);
+  document.querySelectorAll(".hero-mob").forEach((e) => {
+    const imgs = e.querySelectorAll("img");
+    gsap.set(imgs, {
+      clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
+    });
+    gsap.set(imgs[0], {
+      clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
+    });
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: e,
+        start: "top 0",
+        end: "+=400",
+        scrub: 1,
+      },
+    });
+
+    tl.to(imgs, {
+      clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
+      stagger: 0.2,
+      duration: 2,
+    });
+  });
+</script>
