@@ -1,6 +1,6 @@
 ---
 title: 'Locked in - Written & Directed by Thibaut Anderson'
-pubDate: 2024-09-14
+pubDate: 14-09-2024
 description: 'The first Anderson Productions production, a short film filled with many emotions. The storyline may not be super clear, but the description below fills you in on the idea. Please bear in mind that this was filmed in Transtion Year.'
 role: 'Writing & Directing'
 tags: ["film","school"]
