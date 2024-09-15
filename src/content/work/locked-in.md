@@ -1,52 +1,31 @@
 ---
-title: 'Locked in - Written & Directed by Thibaut anderson'
-pubDate: 2020-08-05
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus nisl, pharetra ut felis blandit, viverra sodales eros. Quisque a sollicitudin ante. Mauris non convallis ligula, eu feugiat neque.'
+title: 'Locked in - Written & Directed by Thibaut Anderson'
+pubDate: 2024-09-14
+description: 'The first Anderson Productions production, a short film filled with many emotions. The storyline may not be super clear, but the description below fills you in on the idea. Please bear in mind that this was filmed in Transtion Year.'
 role: 'Writing & Directing'
-tags: ["film","personal"]
+tags: ["film","school"]
 image:
     src: '/2024/02.jpeg'
     alt: ''
 ---
-## PlanetScale
+## The storyline
 
-According to the **[official website](https://planetscale.com/)**, 
-PlanetScale is the world's most advanced serverless MySQL platform.
+**look away if you don't want any spoilers**
 
-With Drizzle ORM you can access PlanetScale over http
-through their official **[`database-js`](https://github.com/planetscale/database-js)**
-driver from serverless and serverfull environments with our `drizzle-orm/planetscale-serverless` package.
+Gemma is sent a blackmail text by an unknown 'K', saying that if she doesn't pay a certain amount of money, 'K' will post a picture online of Gemma kissing Rosie's (Gemma's best friend's) boyfriend. Shortly after receiving the text, Gemma spots that there is a poster in the hallway for a school Talent Show - with the prize for the winner being a substantial sum of money. Gemma resorts to telling her close group of friends about the blackmail she had received in a conversation in the canteen at school - and explains her plan to break into the school during the night to steal the money (to pay the blackmailer).
+After breaking into the school, Gemma and her friends realise they are locked in as the rope they used to enter, has fallen in behind them. The group decides to find the money and search for a way out later. 
+After finding the money, one of Gemma's friends, Linda, is opposed to giving ALL the money to Gemma - and wants to split it. Kaleb and Rosie have to intervene to put Linda back in her place, explaining that they had all agreed on who was getting the money - Gemma. 
+The following day, Gemma meets up with the blackmailer - who happens to be...... KALEB, a member of her close friend group who had helped them in their heist the night before.
 
-You can also access PlanetScale through TCP with `mysql2` driver — **[see here.](/docs/get-started-mysql#mysql-2)**
-# Drizzle ORM  
-> Drizzle is a good friend who's there for you when necessary and doesn't bother when you need some space.
+# Subtitle 2 
 
-Drizzle ORM is a headless TypeScript ORM with a head 🐲
-
-It looks and feels simple, performs on day _1000_ of your project, 
-lets you do things your way, and is there when you need it.  
-
-**It's the only ORM with both [relational](/docs/rqb) and [SQL-like](/docs/select) query APIs**, 
-providing you best of both worlds when it comes to accessing your relational data. 
-Drizzle is lightweight, performant, typesafe, non lactose, gluten-free, sober, flexible and **serverless-ready by design**.
-Drizzle is not just a library, it's an experience 🤩
+Content 2
 
 
-## Headless ORM? 
-First and foremost, Drizzle is a library and a collection of complementary opt-in tools. 
+## Subtitle 3
 
-**ORM** stands for _object relational mapping_, and developers tend to call Django-like or Spring-like tools an ORM. 
-We trully believe it's a misconception based on legacy nomenclature and we call them **data frameworks**.
+Content 3
 
+## Subtitle 4
 
-**Drizzle** lets you build your project the way you want, without interfering with your project or structure. 
-
-Using Drizzle you can define & manage database schemas in TypeScript, access your data in a SQL-like 
-or relational way, and take advantage of opt in tools 
-to push your developer experience _through the roof_ 🤯 
-
-## Why SQL-like?
-**If you know SQL — you know Drizzle**.
-  
-Other ORMs and data frameworks tend to deviate/abstract you away from SQL which 
-leads to a double learning curve — needi
+Content 4
