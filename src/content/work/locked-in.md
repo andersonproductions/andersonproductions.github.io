@@ -17,4 +17,4 @@ After breaking into the school, Gemma and her friends realise they are locked in
 After finding the money, one of Gemma's friends, Linda, is opposed to giving ALL the money to Gemma - and wants to split it. Kaleb and Rosie have to intervene to put Linda back in her place, explaining that they had all agreed on who was getting the money - Gemma. 
 The following day, Gemma meets up with the blackmailer - who happens to be...... KALEB, a member of her close friend group who had helped them in their heist the night before.
 
-<iframe src="https://www.youtube.com/embed/lX-1BcGPZ50?vq=hd1080&rel=0&color=white" width="560" height="315" title="Locked In - Short Film" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full" src="https://www.youtube.com/embed/lX-1BcGPZ50?vq=hd1080&rel=0&color=white" width="560" height="315" title="Locked In - Short Film" frameborder="0" allowfullscreen></iframe>
