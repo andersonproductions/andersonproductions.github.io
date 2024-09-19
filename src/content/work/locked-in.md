@@ -33,19 +33,19 @@ The following day, Gemma meets up with the blackmailer - who happens to be......
 
 **BTS**: Hannah Cummins Weiss\
 
-**Cast**: Dora Madden - as Gemma\
-        __Soraya Medgenberg - as Rosie\
-          Can Kuzucu - as Kaleb\
-          Mona Abdulmagid - as Billie\
-          Hannah Cummins Weiss - as Linda\
-          Grace Niklas - as Lana and Linda\
-          Sophie Wall - as Sophia\
-          Theo Murphy and Tom Hogan - cameos\
+**Cast**: - Dora Madden - as Gemma\
+          - Soraya Medgenberg - as Rosie\
+          - Can Kuzucu - as Kaleb\
+          - Mona Abdulmagid - as Billie\
+          - Hannah Cummins Weiss - as Linda\
+          - Grace Niklas - as Lana and Linda\
+          - Sophie Wall - as Sophia\
+          - Theo Murphy and Tom Hogan - cameos\
           
-**Music**: Declan O'Rourke (*No Brakes*)\
-           Ultra Cat (*One NIce Thing, Once a Day.*)\
-           Kevin MacLeod (*Prelude and Action*)\
-           TunePocket (*Skyline Crime Scene - Preview*)\
-           BreakzStudios (*Epic Cinematic Reveal Logo - via Pixabay*)
+**Music**: - Declan O'Rourke (*No Brakes*)\
+           - Ultra Cat (*One NIce Thing, Once a Day.*)\
+           - Kevin MacLeod (*Prelude and Action*)\
+           - TunePocket (*Skyline Crime Scene - Preview*)\
+           - BreakzStudios (*Epic Cinematic Reveal Logo - via Pixabay*)
 
 <iframe class="w-full" src="https://www.youtube.com/embed/lX-1BcGPZ50?vq=hd1080&rel=0&color=white" width="560" height="315" title="Locked In - Short Film" frameborder="0" allowfullscreen></iframe>
