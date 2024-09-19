@@ -23,7 +23,7 @@ The following day, Gemma meets up with the blackmailer - who happens to be......
 **Director**: Thibaut Anderson\
 **Writers**: Thibaut Anderson and Mae Bent, with ideas from Catherine Mendelson\
 **Camera Operators**: Thibaut Anderson, Killian O'Gorman\
-**Sound engineer**: Koko Treyvaud-Hendy, Mae Bent\
+**Sound engineer**: Koko Treyvaud-Hendy, Mae Bent.\
 **BTS**: Hannah Cummins Weiss\
 **Cast**: Dora Madden - as Gemma\
           Soraya Medgenberg - as Rosie\
