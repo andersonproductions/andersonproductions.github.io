@@ -20,11 +20,11 @@ The following day, Gemma meets up with the blackmailer - who happens to be......
 
 ## About the Production
 
-**Director**: Thibaut Anderson
-**Writers**: Thibaut Anderson and Mae Bent, with ideas from Catherine Mendelson
-**Camera Operators**: Thibaut Anderson, Killian O'Gorman
-**Sound engineer**: Koko Treyvaud-Hendy, Mae Bent
-**BTS**: Hannah Cummins Weiss
+**Director**: Thibaut Anderson\
+**Writers**: Thibaut Anderson and Mae Bent, with ideas from Catherine Mendelson\
+**Camera Operators**: Thibaut Anderson, Killian O'Gorman\
+**Sound engineer**: Koko Treyvaud-Hendy, Mae Bent\
+**BTS**: Hannah Cummins Weiss\
 **Cast**: Dora Madden - as Gemma\
           Soraya Medgenberg - as Rosie\
           Can Kuzucu - as Kaleb\
@@ -37,6 +37,6 @@ The following day, Gemma meets up with the blackmailer - who happens to be......
            Ultra Cat (*One NIce Thing, Once a Day.*)\
            Kevin MacLeod (*Prelude and Action*)\
            TunePocket (*Skyline Crime Scene - Preview*)\
-           BreakzStudios (*Epic Cinematic Reveal Logo - via Pixabay*)\
+           BreakzStudios (*Epic Cinematic Reveal Logo - via Pixabay*)
 
 <iframe class="w-full" src="https://www.youtube.com/embed/lX-1BcGPZ50?vq=hd1080&rel=0&color=white" width="560" height="315" title="Locked In - Short Film" frameborder="0" allowfullscreen></iframe>
