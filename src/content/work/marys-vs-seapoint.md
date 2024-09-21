@@ -1,10 +1,10 @@
 ---
-title: "Mary's vs Seapoint"
-pubDate: 2020-08-05
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus nisl, pharetra ut felis blandit, viverra sodales eros. Quisque a sollicitudin ante. Mauris non convallis ligula, eu feugiat neque.'
-role: 'Writing & Directing'
+title: "Rugby - Mary's vs Seapoint U16"
+pubDate: 2024-08-05
+description: 'A strong St Mary's RFC U16s team edged out a win against a strong Seapoint RC team this morning (5th May 2024) in Templeville Road. A cracking game, that came down to just a couple of points in the last 5 minutes.'
+role: 'Photographer'
 tags: ["photo","sport"]
 image:
-    src: '/2024/01.png'
+    src: ''
     alt: ''
 ---
