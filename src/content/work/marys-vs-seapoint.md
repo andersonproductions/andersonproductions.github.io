@@ -5,6 +5,6 @@ description: 'A strong St Mary's RFC U16s team edged out a win against a strong 
 role: 'Photographer'
 tags: ["photo","sport"]
 image:
-    src: ''
+    src: 'MarysvsSeapoint.jpg'
     alt: ''
 ---
