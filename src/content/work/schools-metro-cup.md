@@ -1,10 +1,15 @@
 ---
-title: "Schools Metro Cup Final"
+title: "Football - U19s Schools Metro Cup Final"
 pubDate: 2024-05-15
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus nisl, pharetra ut felis blandit, viverra sodales eros. Quisque a sollicitudin ante. Mauris non convallis ligula, eu feugiat neque.'
-role: 'Writing & Directing'
+description: 'A different type of shoot 👇
+
+On the 15th of May 2024, I had the wonderful opportunity of shooting my first ever football (soccer) match - the Leinster Metropolitan Area U19s Schools Final in which St Kilian’s Deutsche Schule faced St Gerards.
+
+St Kilian’s took the win, 4-1. 🏆
+'
+role: 'Photography'
 tags: ["photo","sport"]
 image:
-    src: '/2023/00.jpeg'
+    src: ''
     alt: ''
 ---
