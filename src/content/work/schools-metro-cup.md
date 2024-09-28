@@ -7,6 +7,6 @@ St Kilian’s took the win, 4-1. 🏆
 role: 'Photography'
 tags: ["photo","sport"]
 image:
-    src: ''
+    src: '/2024/DSC_2427.JPG'
     alt: ''
 ---
