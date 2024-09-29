@@ -1,22 +1,37 @@
 ---
+import { splitThatText } from "../utils";
+
 interface Props {
-  title: string;
-  tags: Array<string>;
-  image: {
-    src: string;
-    alt: string;
-  };
-  slug: string;
+    title: string;
+    tags: Array<string>;
+    image: {
+        src: string;
+        alt: string;
+    };
+    slug: string;
 }
 
 const { title, tags, image, slug } = Astro.props as Props;
+const tsplit = splitThatText(title);
 ---
 
 <a
-  class="py-11 px-9 relative odd:bg-coquelicot item-card flex bg-myrtle_green uppercase"
-  data-img={image.src}
-  href={`/work/${slug}`}
+    class="py-11 px-9 relative odd:bg-coquelicot item-card flex bg-myrtle_green uppercase"
+    data-img={image.src}
+    href={`/work/${slug}`}
 >
-  <h1 class="font-extenda_headings text-5xl z-20">{title}</h1>
-  <sup class="font-roboto_mono font-medium z-20">{tags[0]}</sup>
+    <h1 class="font-extenda_headings text-5xl z-20">
+        {
+            tsplit.flatMap((e) => {
+                if (e.is_text) {
+                    return <span>{e.value}</span>;
+                } else {
+                    return (
+                        <span class="font-satoshi font-black">{e.value}</span>
+                    );
+                }
+            })
+        }
+    </h1>
+    <sup class="font-roboto_mono font-medium z-20">{tags[0]}</sup>
 </a>
