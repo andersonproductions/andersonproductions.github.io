@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
 const work = await getCollection("work");
-const works = work.splice(0,5)
+const works = work.sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getTime()).reverse().splice(0,5)
 ---
 
 <Layout
