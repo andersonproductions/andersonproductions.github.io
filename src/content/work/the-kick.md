@@ -5,7 +5,7 @@ description: 'A short-film based on a true story, filled with determination, exc
 role: 'Directing, Writing & Acting'
 tags: ["film","sport"]
 image:
-    src: '/2024/thekick_thumbnail.png'
+    src: '/2024/thekick_webimage.png'
     alt: ''
 ---
 ## Where to watch
