@@ -10,4 +10,5 @@ image:
 ---
 
 ## Full gallery on the Seapoint Website:
-[U16s Seapoint vs Marys](https://www.seapointrugby.club/envira/2024-05-05-seapoint-u16s-vs-st-marys/)
+
+[U16s - Seapoint vs Marys](https://www.seapointrugby.club/envira/2024-05-05-seapoint-u16s-vs-st-marys/)
