@@ -5,7 +5,13 @@ import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
 const work = await getCollection("work");
-const works = work.sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getTime()).reverse().splice(0,5)
+function pubdate(pubDate:string) {
+    const v = pubDate.split("-");
+    const d = new Date(+v[2], +v[1] - 1, +v[0]);
+    return d.getTime();
+}
+
+const works = work.sort((a, b) => pubdate(a.data.pubDate) - pubdate(b.data.pubDate)).reverse()
 ---
 
 <Layout
@@ -22,7 +28,7 @@ const works = work.sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getT
   nav_pos="left"
   bg="white"
 >
-  <main>
+  <main class="pt-32">
   
     <section id="recents" class=" bg-night text-white_smoke">
       <div class="marquee w-[100vw] flex flex-nowrap gap-20 py-5 overflow-clip">
@@ -31,6 +37,7 @@ const works = work.sort((a, b) => a.data.pubDate.getTime() - b.data.pubDate.getT
       <div>
 {
   works.map((e)=>{
+    console.log(e.data.title)
     return <ProjectCard slug={e.slug} title={e.data.title} image={e.data.image} tags={e.data.tags} />
   })
 }

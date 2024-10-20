@@ -1,12 +1,12 @@
 ---
-title: "Rugby - Seapoint Rugby Club"
-pubDate: 2024-10-20
-description: "I have worked time and time again with Seapoint Rugby Club, offering my services for Senior games and underage games. The pictures appear on the Seapoint website gallery, or you can click the links below for the respective galleries."
-role: "Photography"
-tags: ["photo","sport"]
+title: 'Rugby - Seapoint Rugby Club'
+pubDate: '20-10-2024'
+description: 'I have worked time and time again with Seapoint Rugby Club, offering my services for Senior games and underage games. The pictures appear on the Seapoint website gallery, or you can click the links below for the respective galleries.'
+role: 'Photography'
+tags: ['photo','sport']
 image:
-    src: "/2024/MarysvsSeapoint.jpg"
-    alt: ""
+    src: '/2024/MarysvsSeapoint.jpg'
+    alt: ''
 ---
 
 ## Full galleries on the Seapoint Website:
