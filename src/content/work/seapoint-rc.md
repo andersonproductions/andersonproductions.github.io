@@ -10,7 +10,7 @@ image:
 ---
 
 ## Full galleries on the Seapoint Website:
-Click on any to view:
+Click on any to view:\
 2024-2025 season:\
 [***U17s - Seapoint vs Greystones B***](https://www.seapointrugby.club/envira/2024-10-20-seapoint-u17s-vs-greystones-b/)\
 [***1st XV Leinster League - Seapoint vs Carlow***](https://www.seapointrugby.club/envira/seapoint-1xv-vs-carlow-leinster-league-21-09-2024/)\
