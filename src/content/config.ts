@@ -1,13 +1,5 @@
 import { defineCollection, reference, z } from "astro:content";
-const photosCollection = defineCollection({
-  type: "data",
-  schema: z.object({
-    url: z.string(),
-    alt: z.string(),
-    tags: z.array(z.string()),
-    project: reference("work"),
-  }),
-});
+
 const workCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -24,6 +16,5 @@ const workCollection = defineCollection({
 });
 
 export const collections = {
-  photos: photosCollection,
   work: workCollection,
 };
