@@ -5,10 +5,15 @@ import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
 const work = await getCollection("work");
-function pubdate(pubDate:string) {
+function pubdate(pubDate: string): string {
     const v = pubDate.split("-");
-    const d = new Date(+v[2], +v[1], +v[0]);
-    return d.getDate();
+    const d = new Date(+v[2], +v[1] - 1, +v[0]);
+
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+
+    return `${day}-${month}-${year}`;
 }
 
 const works = work.sort((a, b) => pubdate(a.data.pubDate) - pubdate(b.data.pubDate)).reverse()
