@@ -8,7 +8,7 @@ const work = await getCollection("work");
 function pubdate(pubDate:string) {
     const v = pubDate.split("-");
     const d = newDate(+v[2], +v[1], +v[0]);
-    return d.newDate();
+    return d.getDate();
 }
 
 const works = work.sort((a, b) => pubdate(a.data.pubDate) - pubdate(b.data.pubDate)).reverse()
