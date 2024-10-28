@@ -1,6 +1,6 @@
 ---
 title: 'Locked In - TY Short-Film'
-pubDate: "14-10-2024"
+pubDate: "14-09-2024"
 description: 'The first short-film produced by Anderson Productions, filled with many emotions. The storyline may not be super clear, but the description below fills you in on the idea. Please bear in mind that this was filmed in Transtion Year in Secondary School.'
 role: 'Short-Films'
 tags: ["film","school"]
