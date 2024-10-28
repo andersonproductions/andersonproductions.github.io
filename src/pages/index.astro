@@ -9,11 +9,6 @@ function pubdate(pubDate: string): Date {
     const v = pubDate.split("-");
     const d = new Date(+v[2], +v[1], +v[0]);
     return d
-    // const day = String(d.getDate()).padStart(2, '0');
-    // const month = String(d.getMonth() + 1).padStart(2, '0');
-    // const year = d.getFullYear();
-
-    // return `${day}-${month}-${year}`;
 }
 
 const works = work.sort((a, b) => pubdate(a.data.pubDate).getTime() - pubdate(b.data.pubDate).getTime()).reverse()
