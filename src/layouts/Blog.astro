@@ -20,7 +20,7 @@ const { title, description, pubDate, role, tags, image } = Astro.props;
 const tsplit = splitThatText(title);
 function pubdate() {
     const v = pubDate.split("-")
-    const d = newDate(+v[2],+v[1]-1,+v[0])
+    const d = newDate(+v[2],+v[1],+v[0])
     return d.newDate()
 }
 
