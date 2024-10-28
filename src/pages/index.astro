@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
 const work = await getCollection("work");
-function pubdate(pubDate: string): string {
+function pubDate(pubDate: string): string {
     const v = pubDate.split("-");
     const d = new Date(+v[2], +v[1] - 1, +v[0]);
 
