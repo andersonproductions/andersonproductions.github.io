@@ -14,20 +14,11 @@ function pubdate(pubDate: string): Date {
 const works = work.sort((a, b) => pubdate(a.data.pubDate).getTime() - pubdate(b.data.pubDate).getTime()).reverse()
 ---
 
-<Layout
-  title="Anderson Productions"
-  category=""
-  description=""
-  keywords=""
-  openGraph={{
-    title: "",
-  }}
-  twitter={{
-    card: "summary_large_image",
-  }}
-  nav_pos="left"
-  bg="white"
->
+<Layout>
+    <header class="flex justify-center items-center py-5">
+        <import HeroImages from "src/components/HeroImages.astro";>
+    <header>
+
     <section>
 
     <section id="recents" class=" bg-night text-white_smoke">
