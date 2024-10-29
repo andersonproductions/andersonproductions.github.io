@@ -28,7 +28,18 @@ const works = work.sort((a, b) => pubdate(a.data.pubDate).getTime() - pubdate(b.
   nav_pos="left"
   bg="white"
 >
-
+    <section id="recents" class=" bg-night text-white_smoke">
+      <div class="marquee w-[100vw] flex flex-nowrap gap-20 py-5 overflow-clip">
+        <h1 class="marquee flex-nowrap shrink-0 font-extenda_light text-5xl uppercase">Recent Projects</h1>
+      </div>
+      <div>
+{
+  works.map((e)=>{
+    console.log(e.data.title)
+    return <ProjectCard slug={e.slug} title={e.data.title} image={e.data.image} tags={e.data.tags} />
+  })
+}
+   
     </section>
     <section
       class="flex flex-col bg-orange_web text-white_smoke justify-center items-center text-center"
@@ -44,21 +55,9 @@ const works = work.sort((a, b) => pubdate(a.data.pubDate).getTime() - pubdate(b.
         movement and freedom, with an eye for detail and a passion for
         storytelling.
       </p>
+
   <main class="pt-32">
     </div>
-  
-    <section id="recents" class=" bg-night text-white_smoke">
-      <div class="marquee w-[100vw] flex flex-nowrap gap-20 py-5 overflow-clip">
-        <h1 class="marquee flex-nowrap shrink-0 font-extenda_light text-5xl uppercase">Recent Projects</h1>
-      </div>
-      <div>
-{
-  works.map((e)=>{
-    console.log(e.data.title)
-    return <ProjectCard slug={e.slug} title={e.data.title} image={e.data.image} tags={e.data.tags} />
-  })
-}
-
     </section>
     <section
       class="flex flex-col bg-night text-white_smoke justify-center items-center text-center"
