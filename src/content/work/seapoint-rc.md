@@ -8,7 +8,6 @@ image:
     src: '/2024/MarysvsSeapoint.jpg'
     alt: ''
 ---
-
 ## Full galleries on the Seapoint Website:
 Click on any to view:
 
