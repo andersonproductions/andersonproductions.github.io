@@ -5,7 +5,7 @@ description: 'I have worked time and time again with Seapoint Rugby Club, offeri
 role: 'Photography'
 tags: ['photo','sport']
 image:
-    src: '/2024/MarysvsSeapoint.jpg'
+    src: '/2024/JamesOToole-MarysvsSeapoint.jpg'
     alt: ''
 ---
 ## Full galleries on the Seapoint Website:
