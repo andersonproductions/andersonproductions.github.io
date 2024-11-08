@@ -8,7 +8,7 @@ import Logo from "./Logo.astro";
 ---
 
 <nav
-  class={`static md:fixed w-[100vw] z-30 ${nav_pos === ";eft" ? "justify-end" : "justify-start"} `}
+  class={`static md:fixed w-[100vw] z-30 ${nav_pos === "left" ? "justify-end" : "justify-start"} `}
   style={`${nav_pos === "left" ? "display: flex; justify-content: flex-start;" : "display: flex; justify-content: flex-end;"}${bg === "black" ? "color: #EFF1ED;" : "color: #101211;"} `}
 >
   <a
