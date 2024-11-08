@@ -6,6 +6,6 @@ description: 'On the 15th of May 2024, I had the wonderful opportunity of shooti
 role: 'Photography'
 tags: ["photo","sport"]
 image:
-    src: '/2024/DSC_2427.JPG'
+    src: '/2024/patryk-schoolscupfinal.JPG'
     alt: ''
 ---
