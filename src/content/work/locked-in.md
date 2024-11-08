@@ -5,7 +5,7 @@ description: 'The first short-film produced by Anderson Productions, filled with
 role: 'Short-Films'
 tags: ["film","school"]
 image:
-    src: '/2024/02.jpeg'
+    src: '/2024/locked-in-cast.jpeg'
     alt: ''
 ---
 ## The storyline
