@@ -8,7 +8,7 @@ import Logo from "./Logo.astro";
 ---
 
 <nav
-  class={`static md:fixed w-[85vw] ml-[15vw] z-30 ${nav_pos === "left" ? "justify-end" : "justify-start"} `}
+  class={`static md:fixed w-[92vw] ml-[8vw] z-30 ${nav_pos === "left" ? "justify-end" : "justify-start"} `}
   style={`${nav_pos === "left" ? "display: flex; justify-content: flex-start;" : "display: flex; justify-content: flex-end;"}${bg === "black" ? "color: #EFF1ED;" : "color: #101211;"} `}
 >
   <a
@@ -34,7 +34,7 @@ import Logo from "./Logo.astro";
           duration: 0.18,
         });
       } else {
-        gsap.to(nav, { width: "85%" });
+        gsap.to(nav, { width: "92%" });
       }
     });
   }
