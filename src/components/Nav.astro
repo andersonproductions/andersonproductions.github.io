@@ -10,16 +10,16 @@ import Logo from "./Logo.astro";
 <nav
   class={`static md:fixed w-[95vw] ml-[5vw] z-30 ${nav_pos === "left" ? "justify-end" : "justify-start"} `}
   style={{
-    display: flex;
-    justify-content: ${nav_pos === "left" ? "flex-start" : "flex-end"};
-    color: ${bg === "black" ? "#EFF1ED" : "#101211"};
-    text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff;
+    display: 'flex',
+    justifyContent: nav_pos === "left" ? "flex-start" : "flex-end"},
+    color: bg === "black" ? "#EFF1ED" : "#101211",
+    textShadow: '1px 1px 2px #ffffff, -1px -1px 2px #ffffff';
   }}
 >
   <a
     href="/"
     class="px-3 py-8 nav-logo flex justify-center"
-    style="width: 100%;"
+    style={{ width: '100%' }}
   >
     <Logo />
   </a>
