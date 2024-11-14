@@ -19,23 +19,3 @@ import Logo from "./Logo.astro";
     <Logo />
   </a>
 </nav>
-<script>
-  import gsap from "gsap";
-  import { CustomEase } from "gsap/all";
-  gsap.registerPlugin(CustomEase);
-  let nav = document.querySelector(".nav-logo");
-  //@ts-expect-error
-  const navHeight = nav?.offsetHeight ?? 0;
-  if (window.innerWidth > 400) {
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > navHeight) {
-        gsap.to(nav, {
-          width: "30%",
-          duration: 0.18,
-        });
-      } else {
-        gsap.to(nav, { width: "92%" });
-      }
-    });
-  }
-</script>
