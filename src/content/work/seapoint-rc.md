@@ -16,7 +16,7 @@ Click on any to view:
 [***2nd XV Leinster League - Seapoint vs Bective Rangers***](https://www.seapointrugby.club/envira/2024-11-09-seapoint-2nds-vs-bective/)\
 [***1st XV Leinster League - Seapoint vs Carlow***](https://www.seapointrugby.club/envira/seapoint-1xv-vs-carlow-leinster-league-21-09-2024/)\
 [***1st XV Colm O'Shea Cup FINAL - Seapoint vs Tullow***](https://www.seapointrugby.club/envira/seapoint-v-tullow-colm-oshea-cup-final/)\
-[***1st XV Colm O'Shea Cup - Seapoint vs Blackrock College RFC***](https://www.seapointrugby.club/envira/2024-08-24-seapoint-1st-v-blackrock/)
+[***1st XV Colm O'Shea Cup - Seapoint vs Blackrock College RFC***](https://www.seapointrugby.club/envira/2024-08-24-seapoint-1st-v-blackrock/)\
 [***U17s - Seapoint vs Clondalkin***](https://www.seapointrugby.club/envira/2024-09-08-seapoint-u17s-vs-clondalkin/)
 
 2023-2024 season:\
