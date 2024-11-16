@@ -12,6 +12,7 @@ image:
 Click on any to view:
 
 2024-2025 season:\
+[***1st XV AIL Junior Cup QF - Seapoint vs Tullow RFC***](https://www.seapointrugby.club/envira/2024-11-16-seapoint-1xv-vs-tullow-ail-junior-cup-qf/)\
 [***1st XV Leinster League - Seapoint vs Bective Rangers***](https://www.seapointrugby.club/envira/2024-11-09-seapoint-1xv-vs-bective/)\
 [***2nd XV Leinster League - Seapoint vs Bective Rangers***](https://www.seapointrugby.club/envira/2024-11-09-seapoint-2nds-vs-bective/)\
 [***1st XV Leinster League - Seapoint vs Carlow***](https://www.seapointrugby.club/envira/seapoint-1xv-vs-carlow-leinster-league-21-09-2024/)\
