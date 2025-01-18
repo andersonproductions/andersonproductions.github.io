@@ -37,8 +37,8 @@ interface Props {
   bg: "white" | "black";
 }
 
-import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 const {
   title,
   description,
@@ -151,10 +151,8 @@ const {
     }
   </head>
   <body>
-    <Nav />
-    <main class="pt-9">
-    <slot class="antialiased font-cabin text-night pt-9" />
-    </main>
+    <Nav bg={bg} nav_pos={nav_pos} />
+    <slot class="antialiased font-cabin text-night" />
     <Footer />
   </body>
 </html>
@@ -266,15 +264,15 @@ const {
     font-family: ExtendaHeadings,Satoshi-Variable;
   }
 </style>
-<!-- <script>
-//   import Lenis from "lenis";
+<script>
+  import Lenis from "lenis";
 
-//   const lenis = new Lenis();
+  const lenis = new Lenis();
 
-//   function raf(time: number) {
-//     lenis.raf(time);
-//     requestAnimationFrame(raf);
-//   }
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
-//   requestAnimationFrame(raf);
-</script> -->
+  requestAnimationFrame(raf);
+</script>

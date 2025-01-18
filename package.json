@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@splidejs/splide": "^4.1.4",
     "@types/gsap": "^3.0.0",
     "astro": "^4.10.2",
     "gsap": "^3.12.5",
@@ -19,6 +20,7 @@
     "marquee": "^0.2.1",
     "marquee-content": "^4.4.0",
     "split-type": "^0.3.4",
+    "swiper": "^11.2.1",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   }
