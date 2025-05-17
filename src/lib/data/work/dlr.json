@@ -1,0 +1,44 @@
+{
+  "__typename": "project_page",
+  "title": "Dun Laoghaire-Rathdown Bumpers",
+  "meta": {
+    "description": ""
+  },
+  "hero_content": [
+    {
+      "headline": "Client",
+      "body": "Dun Laoghaire-Rathdown County Council"
+    }
+  ],
+  "cta": {
+    "text": "Click to view project",
+    "link": "#watch"
+  },
+  "body": {
+    "format": "html",
+    "value": "{{load_md}}"
+  },
+  "page_data": [
+    "hero_default",
+    {
+      "__typename": "watch_section",
+      "video_id": "ejkhgfy6"
+    },
+    {
+      "__typename": "awwards_section",
+      "data": [{}]
+    },
+    {
+      "__typename": "default_body",
+      "data": []
+    },
+    {
+      "__typename": "photo_gallery_section",
+      "data": []
+    },
+    {
+      "__typename": "press_section",
+      "data": []
+    }
+  ]
+}
