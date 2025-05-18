@@ -1,0 +1,86 @@
+export let footerData = {
+  legalText:
+    '<p>Anderson Productions, All Rights Reserved. Use of this website (including any and all parts and components) constitutes your acceptance of these <a href="/terms">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.</p>',
+  socialMeida: [],
+  links: [
+    {
+      text: null,
+      url: null,
+      items: [
+        {
+          text: "Press Room",
+          url: {
+            href: "/press",
+          },
+          uppercase: true,
+          bold: true,
+        },
+        {
+          text: "FYC",
+          url: {
+            href: "/fyc",
+          },
+          uppercase: true,
+          bold: true,
+        },
+      ],
+    },
+    {
+      text: "Legal",
+      url: {
+        href: "/legal",
+        openInNewTab: true,
+      },
+      items: [
+        {
+          text: "Privacy Policy",
+          url: {
+            href: "/legal/privacy",
+            openInNewTab: true,
+          },
+          uppercase: true,
+          bold: true,
+          items: [],
+        },
+        {
+          text: "Terms & Condidtions",
+          url: {
+            href: "/legal/terms",
+            openInNewTab: true,
+          },
+          uppercase: true,
+          bold: true,
+          items: [],
+        },
+        {
+          text: "Comitment to sustainability",
+          url: {
+            href: "/sustainability/com",
+            openInNewTab: true,
+          },
+          uppercase: true,
+          bold: true,
+          items: [],
+        },
+      ],
+    },
+    {
+      text: "Company",
+      url: null,
+      items: [
+        {
+          text: "Leadership",
+          url: {
+            herf: "/company/leadership",
+          },
+        },
+        {
+          text: "Contact",
+          url: {
+            herf: "/contact",
+          },
+        },
+      ],
+    },
+  ],
+};

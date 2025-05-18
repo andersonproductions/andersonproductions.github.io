@@ -1,3 +1,94 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@font-face {
+    font-family: Anderson Productions Headline Font;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/ap.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-Black.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-BlackItalic.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Nebula Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-Book.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-BookItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Nebula Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Nebula Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: Nebula Sans;
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/NebulaSans-MediumItalic.woff2") format("woff2");
+}
+
+@theme {
+    --font-headline: "Anderson Productions Headline Font";
+    --font-garamond: "EB Garamond", sans-serif;
+    --font-ns: "Nebula Sans", sans-serif;
+}
+
+html {
+    @apply font-ns;
+}
