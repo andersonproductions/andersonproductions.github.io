@@ -1,1 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section>
+    <h2 class="text-3xl font-semibold mb-4">Our Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Repeat this block for each team member -->
+      <div class="flex items-center space-x-4">
+        <img src="/images/team1.jpg" alt="Team Member" class="w-16 h-16 rounded-full" />
+        <div>
+          <h3 class="text-xl font-bold">Member Name</h3>
+          <p class="text-sm text-gray-600">Role and brief bio.</p>
+        </div>
+      </div>
+      <!-- ... -->
+    </div>
+  </section>
+</BaseLayout>
 
