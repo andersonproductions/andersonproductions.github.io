@@ -1,19 +1,13 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+const { children } = Astro.props;
 ---
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson Productions</title>
   </head>
-  <body class="bg-white text-gray-900">
-    <Header />
-    <main class="container mx-auto px-4 py-8">
-      <slot />
-    </main>
-    <Footer />
+  <body class="font-sans text-gray-800">
+    {children}
   </body>
 </html>
