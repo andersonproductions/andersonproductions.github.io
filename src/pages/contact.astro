@@ -6,19 +6,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section>
     <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
     <form class="space-y-4">
-      <div>
-        <label for="name" class="block text-sm font-medium">Name</label>
-        <input type="text" id="name" class="w-full border px-3 py-2 rounded" />
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium">Email</label>
-        <input type="email" id="email" class="w-full border px-3 py-2 rounded" />
-      </div>
-      <div>
-        <label for="message" class="block text-sm font-medium">Message</label>
-        <textarea id="message" rows="4" class="w-full border px-3 py-2 rounded"></textarea>
-      </div>
-      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+      <input type="text" placeholder="Name" class="w-full border px-3 py-2 rounded" />
+      <input type="email" placeholder="Email" class="w-full border px-3 py-2 rounded" />
+      <textarea rows="4" placeholder="Message" class="w-full border px-3 py-2 rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
     </form>
   </section>
 </BaseLayout>
