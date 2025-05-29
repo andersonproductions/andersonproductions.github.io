@@ -2,7 +2,6 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "deploy": "astro deploy"
+    "preview": "astro preview"
   }
 }
