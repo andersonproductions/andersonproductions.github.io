@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro.config';
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config';
 import github from '@astrojs/github';
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://andersonproductions.github.io',
   base: '/',
+  site: 'https://andersonproductions.github.io',
   adapter: github(),
   integrations: [tailwind()],
 });
