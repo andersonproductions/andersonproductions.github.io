@@ -1,1 +1,13 @@
-
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout>
+  <Header />
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <p class="text-gray-700">Anderson Productions is a team of passionate creatives dedicated to capturing your most cherished moments through the lens of our cameras. Our mission is to provide high-quality photography and videography services that tell your unique story.</p>
+  </main>
+  <Footer />
+</BaseLayout>
