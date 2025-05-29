@@ -1,3 +1,9 @@
+"devDependencies": {
+  "astro": "^3.6.5",
+  "@astrojs/github": "^1.0.0",
+  "@astrojs/tailwind": "^4.0.0",  // updated version here
+  "tailwindcss": "^3.3.2"
+}
 {
   "name": "andersonproductions",
   "version": "1.0.0",
