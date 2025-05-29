@@ -1,11 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
-
 <BaseLayout>
-  <section class="text-center space-y-6">
-    <h1 class="text-4xl font-bold">Anderson Productions</h1>
-    <p>High-quality videography and photography based in Dublin.</p>
-    <a href="/portfolios" class="bg-blue-600 text-white px-4 py-2 rounded">View Our Work</a>
-  </section>
+  <Header />
+  <main class="container mx-auto px-4 py-8">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Anderson Productions</h2>
+      <p class="text-gray-700 mb-6">Capturing moments that last a lifetime.</p>
+      <a href="/work" class="inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">View Our Work</a>
+    </section>
+  </main>
+  <Footer />
 </BaseLayout>
