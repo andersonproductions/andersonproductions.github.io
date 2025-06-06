@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "BORD GÁIS ENERGY",
+    "description": "",
+    "teaser_image": "{{URL}}"
+  },
+  "tags": [],
+  "items": [
+    {
+      "type": "section",
+      "items": [
+        {
+          "type": "two_hoz_col",
+          "items": [
+            {
+              "type": "project_page_teaser",
+              "text": "Bringing a new energy to an ancient game"
+            },
+            {
+              "type": "project-page-body",
+              "items": [
+                {
+                  "type": "HEADING",
+                  "text": "The Background"
+                },
+                {
+                  "type": "body_html",
+                  "text": "<p>Over the past six years, we have led the strategy, creative and production of Bord Gáis Energy's All-Ireland Senior Hurling Championship sponsorship, giving them a highly engaging and distinctive voice in the space through a diverse mix of 360 campaigns spanning episodical youtube series, social content, TV commercials and much more.</p>"
+                },
+                {
+                  "type": "content_break"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "line_break"
+    },
+    {
+      "type": "video_block",
+      "text": "Watch Film",
+      "video": {
+        "service": "youtube",
+        "id": "4896458"
+      }
+    },
+    {
+      "type": "content_break"
+    },
+    {
+      "type": "section",
+      "items": [
+        {
+          "type": "eyebrow_paragraph",
+          "eyebrow": "The Insight",
+          "text": "<p>Our game, it puts hands in hands, goes head to head and toe to toe. It sends ash to ash, village to village, county to county, passes generation to generation.<br/><br/>It stands shoulder to shoulder, lives neighbour to neighbour, sees eye to eye, holds soul to soul and brings skin to skin. It sets us apart and brings us together, It’s everyone’s and it’s nobody’s.</p>"
+        },
+        {
+          "type": "image_gallery",
+          "items": [
+            {
+              "service": {
+                "name": "repo",
+                "id": "387376.jpg"
+              }
+            },
+            {
+              "service": {
+                "name": "bunny",
+                "id": "387_fhdj376.jpeg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "line_break" },
+    {
+      "type": "section",
+      "items": [
+        {
+          "type": "eyebrow_title",
+          "eyebrow": "The Positioning",
+          "text": "It's Anyone's Game celebrates all that is great about our modern, progressive Ireland through the lens of hurling. With this platform we aimed to capture and present a unique perspective into the real lives of those who make up the hurling community. Ireland is open to all, and from now on, so is hurling."
+        }
+      ]
+    }
+  ]
+}
