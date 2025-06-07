@@ -27,6 +27,7 @@ export interface CorePage {
   title_override: string | undefined;
   seo_image: string | "auto_gen";
   jsonLD: WebPage | null;
+  url: string;
 }
 export interface AboutPage extends CorePage {
   mainContent: Array<Block>;

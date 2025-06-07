@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
     import type { Footer } from "$lib/block.types";
     import FooterLink from "./FooterLink.svelte";
+    import CarbonBadge from "./CarbonBadge.svelte";
 
     export let data: Footer;
     var text: string;
@@ -16,6 +17,9 @@
         {#each data.links as link}
             <FooterLink links={[link]} />
         {/each}
+    </div>
+    <div class=" flex flex-row gap-8">
+        <CarbonBadge />
     </div>
     <p class="legal_text">
         {text}{@html data.legalText}

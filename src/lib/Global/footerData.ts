@@ -1,7 +1,7 @@
 import type { Footer } from "$lib/block.types";
 export let footerData: Footer = {
   legalText:
-    '<span>FX Productions, LLC. All Rights Reserved. Use of this website (including any and all parts and components) constitutes your acceptance of these <a href="https://disneytermsofuse.com/english-united-kingdom/">Terms of Use</a> and <a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">Privacy Policy</a>.</span>',
+    '<span>Anderson Productions. All Rights Reserved. Use of this website (including any and all parts and components) constitutes your acceptance of these <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.</span>',
   links: [
     {
       text: null,

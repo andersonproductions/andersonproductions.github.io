@@ -8,6 +8,7 @@
     import Nav from "$lib/Global/Nav.svelte";
     import Footer from "$lib/Global/Footer.svelte";
     import { footerData } from "$lib/Global/footerData";
+    import Analytics from "$lib/analytics.svelte";
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollSmoother);
     function classToStyleMap(classes:string) {
@@ -63,6 +64,7 @@
 	});
 
 </script>
+<Analytics/>
 <Nav data={{
   items:[{
     text:"Home",

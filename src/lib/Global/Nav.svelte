@@ -1,25 +1,29 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import Logo from "./Logo.svelte";
+    import { page } from "$app/state";
     import { ScrollTrigger, gsap, CustomEase } from "gsap/src/all";
     import { customEase } from "./ease";
     import type { Nav } from "$lib/block.types";
     import AnimatedSpan from "./AnimatedSpan.svelte";
+    import { sendEvent } from "$lib/gtag";
     gsap.registerPlugin(CustomEase);
     gsap.registerPlugin(ScrollTrigger);
     var logo: HTMLElement;
     onMount(() => {
         let win = window.innerHeight;
-        gsap.from(
-            logo,
-            {
-                y: win * 0.5,
-                duration: 1,
-                postion: "absolute",
-                ease: customEase,
-            },
-            "+=1.5",
-        );
+        if (!page.error) {
+            gsap.from(
+                logo,
+                {
+                    y: win * 0.5,
+                    duration: 1,
+                    postion: "absolute",
+                    ease: customEase,
+                },
+                "+=1.5",
+            );
+        }
     });
 
     function clickMenuButton() {
@@ -57,6 +61,16 @@
                             <a
                                 onclick={() => {
                                     clickMenuButton();
+                                }}
+                                onfocus={() => {}}
+                                onmouseover={() => {
+                                    sendEvent({
+                                        action: "hover",
+                                        category: "engagement",
+                                        label:
+                                            "hover_over_menu_link_" + item.text,
+                                        value: "1",
+                                    });
                                 }}
                                 href={item.url.href}
                                 ><AnimatedSpan>{item.text}</AnimatedSpan></a

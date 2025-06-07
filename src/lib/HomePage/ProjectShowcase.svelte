@@ -16,6 +16,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "/work/seapoint",
         },
         {
             content: [],
@@ -33,6 +34,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "work/seapoint",
         },
         {
             content: [],
@@ -50,6 +52,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "work/seapoint",
         },
         {
             content: [],
@@ -63,6 +66,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "work/seapoint",
         },
         {
             content: [],
@@ -80,6 +84,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "work/seapoint",
         },
         {
             content: [],
@@ -97,6 +102,7 @@
             tags: [{ title: "Sports", weight: 0 }],
             title: "Seapoint Rugby Club",
             title_override: undefined,
+            url: "work/seapoint",
         },
     ];
     var itemsContainer: HTMLElement;
@@ -135,7 +141,8 @@
     class="flex gap-28 flex-col items-center py-60 overflow-clip"
 >
     {#each items as item, i}
-        <div
+        <a
+            href={item.url}
             bind:this={projectItems[i]}
             class="h-[80vh] md:h-[70vh] w-[70vw] md:w-[90vw] flex sticky overflow-clip flex-col justify-between p-7"
         >
@@ -157,6 +164,6 @@
                 />
             {/if}
             <h4 class="flex w-full z-20">{item.title}</h4>
-        </div>
+        </a>
     {/each}
 </div>
