@@ -3,18 +3,14 @@
     import ImageStrips from "$lib/HomePage/ImageStrips.svelte";
     import ProjectShowcase from "$lib/HomePage/ProjectShowcase.svelte";
     import HeroSlider from "$lib/HomePage/HeroSlider.svelte";
-    let items: Array<ContentService> = [
-        {
-            name: "repo",
-            id: "DSC_3961.JPG",
-            alt: "Rugby",
-        },
-        {
-            name: "repo",
-            id: "DSC_3961.png",
-            alt: "Rugby",
-        },
-    ];
+    export let data: {
+        images: string[];
+    };
+    let k = data.images.map((e) => {
+        let b: ContentService = { alt: "image", id: e, name: "repo" };
+        return b;
+    });
+    let items: Array<ContentService> = k;
 </script>
 
 <section>

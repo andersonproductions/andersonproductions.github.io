@@ -1,0 +1,50 @@
+name: Build & Deploy
+on:
+  push:
+    branches: "main"
+  workflow_dispatch:
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Setup Node.js and enable npm caching
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # Install dependencies with npm
+      - name: Install Dependencies
+        run: npm install
+
+      # Build the static site
+      - name: Build
+        env:
+          NODE_ENV: production
+        run: npm run build
+
+      # Upload artifacts for deployment
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "build/" # Adjust if your build output folder is different
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      # Deploy to GitHub Pages
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

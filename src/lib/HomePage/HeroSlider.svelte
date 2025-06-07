@@ -3,17 +3,31 @@
     import type { Options } from "@splidejs/splide";
     import type { ContentService } from "$lib/block.types";
     import "@splidejs/svelte-splide/css/core";
+    let instance;
     let splideOptions: Options = {
         type: "fade",
         autoplay: true,
         perPage: 1,
         arrows: false,
+        interval: 1200,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     };
     export let items: Array<ContentService>;
+
+    function handleMove(event) {
+        const newIndex = event.detail.index;
+
+        if (newIndex === items.length - 1) {
+            setTimeout(() => {
+                instance.go(0);
+            }, splideOptions.interval); // match your autoplay delay
+        }
+    }
 </script>
 
 <div>
-    <Splide options={splideOptions}>
+    <Splide bind:this={instance} on:move={handleMove} options={splideOptions}>
         {#each items as item}
             <SplideSlide>
                 <div class="w-[100vw] h-[98vh]">
