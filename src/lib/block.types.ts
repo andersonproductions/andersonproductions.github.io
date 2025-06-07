@@ -22,6 +22,7 @@ export interface Nav {
 
 //PAGE TYPES
 export interface CorePage {
+  __typename: string;
   title: string;
   description: string;
   title_override: string | undefined;
@@ -29,29 +30,19 @@ export interface CorePage {
   jsonLD: WebPage | null;
   url: string;
 }
-export interface AboutPage extends CorePage {
+
+export interface markdown_page extends CorePage {
+  fileName: string;
+}
+export interface about_page extends CorePage {
   mainContent: Array<Block>;
 }
-export interface PortfolioPage extends CorePage {
+export interface portfolio_page extends CorePage {
   tags: Array<{ title: string; weight: number }>;
   date: Date;
   content: Array<Block>;
   mainImage: { service: ContentService };
 }
-
-let about: AboutPage = {
-  title: "",
-  description: "",
-  title_override: "",
-  seo_image: "",
-  jsonLD: null,
-  mainContent: [
-    { text: "Meet the team", format: "plain-text", weight: "h2" } as title,
-    {
-      text: "A very small team allows us to connect directly with our customers, and keep up to date with everything simultaneously, sharing our ideas with each other as they come to us.",
-    } as body_string,
-  ],
-};
 
 export interface ContentService {
   name: "repo" | "youtube" | "href";
@@ -87,16 +78,19 @@ export interface profile_card extends Block {
   name: string;
   role: string;
   description: string;
-  image: { service: ContentService };
+  image: ContentService;
 }
 
 export interface image_gallery extends Block {
-  items: Array<{ service: ContentService }>;
+  items: Array<ContentService>;
 }
 
 export interface details_section extends Block {
   col1: Array<Block>;
   col2: Array<Block>;
+}
+export interface section extends Block {
+  items: Array<Block>;
 }
 export interface video_section extends Block {
   video: ContentService;

@@ -84,5 +84,5 @@
     items:[]
   }]
 }}/>
-{@render children()}
+<main class="min-h-[75vh]">{@render children()}</main>
 <Footer data={footerData}/>

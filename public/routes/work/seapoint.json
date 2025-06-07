@@ -1,1 +1,47 @@
-{}
+{
+  "__typename": "portfolio_page",
+  "title": "Seapoint Rugby Cub",
+  "description": "Seapoint RFC is a rubgy club with complex dynamic needs, Anderson Productions helps fullfil those needs.",
+  "seo_image": "/assets/images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+  "jsonLD": null,
+  "url": "/work/seapoint",
+  "tags": [
+    { "title": "Sports", "weight": 0 },
+    { "title": "Photography", "weight": 1 },
+    { "title": "Videography", "weight": 2 }
+  ],
+  "date": "07-06-2025",
+  "mainImage": {
+    "service": {
+      "name": "repo",
+      "id": "/assets/images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+      "alt": "Seapoints finest moments captured in hd"
+    }
+  },
+  "content": [
+    "hero_section",
+    {
+      "__typename": "details_section",
+      "col1": [
+        {
+          "__typename": "title",
+          "text": "We love Seapoint’s passion for rugby",
+          "format": "plain-text",
+          "weight": "h2"
+        },
+        "tags"
+      ],
+      "col2": [
+        {
+          "__typename": "body_string",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non semper nisi. Nam ultrices risus lorem. Aenean in quam consequat, egestas magna nec, egestas quam. Praesent et placerat tortor. Nam egestas nunc lacus, id convallis dolor tristique nec. Sed volutpat, turpis ut fringilla lacinia, mauris metus luctus justo, sed malesuada dui urna rhoncus felis. Praesent placerat quam quis risus condimentum, in ultricies metus tincidunt. Sed porttitor orci et magna porta, in consectetur tellus ullamcorper. Proin consectetur imperdiet eros, nec imperdiet purus sollicitudin ut. Nam vel ipsum sodales, finibus ex eget, porta odio. Nunc non tincidunt diam. In vehicula eleifend erat sed finibus. Quisque sagittis libero eu augue laoreet cursus. Pellentesque quis nisi turpis. Cras feugiat purus id vestibulum fermentum. Nulla faucibus ultrices libero, ac dapibus nunc tristique id.\n\nNullam et sodales erat. Suspendisse tincidunt tellus sit amet vehicula molestie. Morbi pellentesque eros a orci ornare, a ultricies lacus egestas. Cras pharetra in lacus nec blandit. Proin non placerat augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet imperdiet tortor, vel gravida arcu. Praesent fermentum, enim pulvinar ultricies efficitur, arcu ligula hendrerit sem, vitae porta sapien metus in eros. Donec dignissim nisl maximus tellus condimentum rhoncus.\n\nIn vehicula id nulla ac blandit. Vestibulum venenatis mi urna, non tincidunt nisi mollis ac. Nam eu rutrum eros, in euismod est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla massa mauris, venenatis id condimentum a, aliquet quis nisl. In dui nulla, imperdiet eu commodo sed, scelerisque vel ex. In rutrum ante libero, vitae hendrerit odio rutrum ac. Nullam id velit sit amet dui lobortis euismod. Cras metus elit, mollis non libero a, pretium vulputate nulla. Sed ultrices, massa vitae facilisis malesuada, enim purus pharetra odio, non feugiat mi metus sit amet eros. Donec ut nisi non mi pellentesque dignissim at eu turpis. Aliquam erat volutpat. Etiam et tristique ipsum. Etiam est sem, tristique nec convallis eu, facilisis quis ligula. Sed ut dui nisl. Phasellus vel ex quis sapien auctor imperdiet.\n\nMorbi a felis posuere, volutpat velit et, commodo nisi. Sed eget mi nec orci cursus cursus. Integer molestie, erat a lobortis consequat, arcu nulla sagittis odio, vitae egestas nibh ante ut est. Donec pellentesque cursus leo, et iaculis est lacinia id. Duis consequat mollis ornare. Vivamus molestie sem id mi tempus imperdiet vel at lectus. Integer ac volutpat quam. Suspendisse nec nibh pharetra, posuere tortor a, tempus mi.",
+          "format": "plain-text"
+        },
+        {
+          "__typename": "image_gallery",
+          "items": [{ "name": "repo", "id": "", "alt": "" }]
+        }
+      ]
+    }
+  ]
+}

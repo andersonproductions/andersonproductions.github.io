@@ -1,0 +1,39 @@
+{
+  "__typename": "about_page",
+  "title": "About",
+  "description": "Anderson Productions comitment to sustainability",
+  "seo_image": "auto_gen",
+  "jsonLD": null,
+  "url": "/about",
+  "mainContent": [
+    {
+      "__typename": "section",
+      "items": [
+        {
+          "__typename": "title",
+          "text": "Meet the team",
+          "format": "plain-text",
+          "weight": "h1"
+        },
+        {
+          "__typename": "body_string",
+          "text": "A very small team allows us to connect directly with our customers, and keep up to date with everything simultaneously, sharing our ideas with each other as they come to us.",
+          "format": "plain-text",
+          "centered": "true"
+        }
+      ]
+    },
+    "\n",
+    {
+      "__typename": "section",
+      "items": [
+        {
+          "__typename": "profile_card",
+          "name": "Thibaut Anderson",
+          "role": "Founder & Creative Director",
+          "image": "/team-images/thibaut.jpg"
+        }
+      ]
+    }
+  ]
+}
