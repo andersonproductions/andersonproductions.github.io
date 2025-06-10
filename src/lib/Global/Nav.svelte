@@ -37,9 +37,9 @@
 
 <nav class="fixed z-50 w-[100vw] p-8">
     <!-- ALWAYS VISABLE -->
-    <div bind:this={logo} class="flex max-h-9">
+    <a href="/" bind:this={logo} class="flex max-h-9">
         <Logo />
-    </div>
+    </a>
     <button
         class={shouldShowMainMenu
             ? "text-white z-50 relative"
