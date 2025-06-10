@@ -38,6 +38,7 @@ export interface about_page extends CorePage {
   mainContent: Array<Block>;
 }
 export interface portfolio_page extends CorePage {
+  __typename: "portfolio_page";
   tags: Array<{ title: string; weight: number }>;
   date: Date;
   content: Array<Block>;
@@ -50,7 +51,10 @@ export interface ContentService {
   alt: string;
 }
 
-export interface Block {}
+export interface Block {
+  __typename: string;
+  items: Array<Block>;
+}
 export interface title extends Block {
   text: string;
   format: "html" | "plain-text";
@@ -61,20 +65,20 @@ export interface body_string extends Block {
   format: "html" | "plain-text";
   centered: boolean;
 }
-export interface body extends Block {
-  items: Array<Block>;
-}
+export interface body extends Block {}
 export interface section extends Block {
-  items: Array<Block>;
   tint: string | undefined;
 }
 export interface eyebrow_title extends Block {
+  __typename: "eyebrow_title";
   eyebrow_text: string;
   // CSS
   eyebrow_tint: string;
   text: Block;
 }
 export interface profile_card extends Block {
+  __typename: "profile_card";
+
   name: string;
   role: string;
   description: string;
@@ -82,16 +86,22 @@ export interface profile_card extends Block {
 }
 
 export interface image_gallery extends Block {
-  items: Array<ContentService>;
+  __typename: "image_gallery";
+
+  images: Array<ContentService>;
 }
 
 export interface details_section extends Block {
+  __typename: "details_section";
   col1: Array<Block>;
   col2: Array<Block>;
 }
-export interface section extends Block {
-  items: Array<Block>;
-}
+export interface section extends Block {}
 export interface video_section extends Block {
   video: ContentService;
+}
+
+export interface custom_block extends Block {
+  __typename: "custom_block";
+  name: string;
 }

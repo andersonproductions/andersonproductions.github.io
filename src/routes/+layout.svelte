@@ -72,15 +72,15 @@
     items:[]
   },{
     text:"Work",
-    url:{href:"/",openInNewTab:false},
+    url:{href:"/work",openInNewTab:false},
     items:[]
   },{
     text:"About",
-    url:{href:"/",openInNewTab:false},
+    url:{href:"/about",openInNewTab:false},
     items:[]
   },{
     text:"Contact",
-    url:{href:"/",openInNewTab:false},
+    url:{href:"/contact",openInNewTab:false},
     items:[]
   }]
 }}/>

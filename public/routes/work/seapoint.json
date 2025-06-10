@@ -4,7 +4,7 @@
   "description": "Seapoint RFC is a rubgy club with complex dynamic needs, Anderson Productions helps fullfil those needs.",
   "seo_image": "/assets/images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
   "jsonLD": null,
-  "url": "/work/seapoint",
+  "url": "work/seapoint",
   "tags": [
     { "title": "Sports", "weight": 0 },
     { "title": "Photography", "weight": 1 },
@@ -14,12 +14,15 @@
   "mainImage": {
     "service": {
       "name": "repo",
-      "id": "/assets/images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+      "id": "images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
       "alt": "Seapoints finest moments captured in hd"
     }
   },
   "content": [
-    "hero_section",
+    {
+      "__typename": "custom_block",
+      "name": "hero_section"
+    },
     {
       "__typename": "details_section",
       "col1": [

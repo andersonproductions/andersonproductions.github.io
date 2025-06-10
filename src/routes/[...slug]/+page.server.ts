@@ -1,32 +1,51 @@
 import fs from "fs";
 import path from "path";
 import type { PageLoad, EntryGenerator } from "./$types";
-import type { CorePage, markdown_page as MarkdownPage } from "$lib/block.types";
+import type {
+  CorePage,
+  markdown_page as MarkdownPage,
+  portfolio_page as PortPage,
+} from "$lib/block.types";
+import { error } from "@sveltejs/kit";
 const dataDir = path.resolve("public/routes");
 export const prerender = true;
 
 export const load: PageLoad = ({ params }) => {
   const files = readDirectoryRecursive(dataDir);
-  const matchedFile = files.find(
-    (file) =>
-      file.endsWith(".json") && file.replace(".json", "") === params.slug,
-  );
+
+  // This reads every JSON file on every request - inefficient
+  const matchedFile = files.find((file) => {
+    if (file.endsWith(".json")) {
+      const raw = fs.readFileSync(file, "utf-8");
+      const pageData: { url: string } = JSON.parse(raw);
+      if (pageData.url.charAt(0) === "/") {
+        return pageData.url === params.slug.substring(1);
+      } else {
+        return pageData.url === params.slug;
+      }
+    }
+    return false;
+  });
+
   if (!matchedFile) {
-    throw new Error(`No page found for slug: ${params.slug}`);
+    console.log(params, matchedFile);
+    throw error(404, "Page not found");
   }
-  const filePath = path.join(dataDir, matchedFile);
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const pageData: CorePage | MarkdownPage = JSON.parse(raw);
-  var md: string | null = null;
-  if (
-    pageData.__typename === "markdown_page" &&
-    typeof pageData.fileName === "string"
-  ) {
-    const filePath = path.join(pageData.fileName);
-    const raw = fs.readFileSync(filePath, "utf-8");
-    md = raw;
-    console.log(filePath);
+
+  // Redundant file read - you already read it above
+  console.log(matchedFile);
+  const raw = fs.readFileSync(matchedFile, "utf-8");
+  const pageData: CorePage | MarkdownPage | PortPage = JSON.parse(raw);
+
+  let md: string | null = null;
+  if (pageData.__typename === "markdown_page" && pageData.fileName) {
+    try {
+      md = fs.readFileSync(pageData.fileName, "utf-8");
+    } catch (error) {
+      console.error(`Error reading markdown file:`, error);
+    }
   }
+
   return {
     pageData,
     markdownData: md,

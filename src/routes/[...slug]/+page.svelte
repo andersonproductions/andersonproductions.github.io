@@ -1,9 +1,16 @@
 <script lang="ts">
+    import DynamicPage from "$lib/DYNPages/DynamicPage.svelte";
     import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();
     console.log(data);
 </script>
 
-<h1>{data.title}</h1>
-<div>{@html data.content}</div>
+<svelte:head>
+    <title
+        >{data.pageData.title_override
+            ? data.pageData.title_override
+            : data.pageData.title + " | Anderson Productions"}</title
+    >
+</svelte:head>
+<DynamicPage data={data.pageData} />
