@@ -13,6 +13,9 @@
     let items: Array<ContentService> = k;
 </script>
 
+<svelte:head>
+    <title>Anderson Productions</title>
+</svelte:head>
 <section>
     <HeroSlider {items} />
 </section>

@@ -15,7 +15,7 @@
         <h1>{title}</h1>
     </div>
     <ImageComp
-        class="w-full h-full absolute top-0 left-0 right-0 bottom-0"
+        class="w-full h-full absolute top-0 left-0 right-0 bottom-0 object-cover"
         data={image}
     />
 </section>

@@ -2,6 +2,16 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk");
 body {
     @apply overflow-x-clip;
 }
+@theme {
+    --font-hanken: "Hanken Grotesk", sans-serif;
+}
+/* .hanken-grotesk-<uniquifier > {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100-900;
+    font-style: normal;
+} */

@@ -32,7 +32,10 @@
           "format": "plain-text",
           "weight": "h2"
         },
-        "tags"
+        {
+          "__typename": "custom_block",
+          "name": "tags"
+        }
       ],
       "col2": [
         {
@@ -42,7 +45,28 @@
         },
         {
           "__typename": "image_gallery",
-          "items": [{ "name": "repo", "id": "", "alt": "" }]
+          "images": [
+            {
+              "name": "repo",
+              "id": "images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+              "alt": ""
+            },
+            {
+              "name": "repo",
+              "id": "images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+              "alt": ""
+            },
+            {
+              "name": "repo",
+              "id": "images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+              "alt": ""
+            },
+            {
+              "name": "repo",
+              "id": "images/cc5d4459-e3e7-4d2b-8e16-d61637c69daa.png",
+              "alt": ""
+            }
+          ]
         }
       ]
     }

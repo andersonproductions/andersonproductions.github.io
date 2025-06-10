@@ -16,6 +16,9 @@
           "weight": "h1"
         },
         {
+          "__typename": "break"
+        },
+        {
           "__typename": "body_string",
           "text": "A very small team allows us to connect directly with our customers, and keep up to date with everything simultaneously, sharing our ideas with each other as they come to us.",
           "format": "plain-text",
@@ -23,7 +26,12 @@
         }
       ]
     },
-    "\n",
+    {
+      "__typename": "break"
+    },
+    {
+      "__typename": "break"
+    },
     {
       "__typename": "section",
       "items": [
