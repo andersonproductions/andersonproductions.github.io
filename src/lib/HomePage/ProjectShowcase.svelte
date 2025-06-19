@@ -1,110 +1,9 @@
 <script lang="ts">
-    import type { PortfolioPage } from "$lib/block.types";
+    import type { portfolio_page } from "$lib/block.types";
     import { onMount } from "svelte";
     import { gsap, ScrollTrigger } from "gsap/all";
     gsap.registerPlugin(ScrollTrigger);
-    var items: Array<PortfolioPage> = [
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: { alt: "", id: "DSC_3961.png", name: "repo" },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "/work/seapoint",
-        },
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: {
-                    alt: "",
-                    id: "https://picsum.photos/seed/picsum/536/354",
-                    name: "href",
-                },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "work/seapoint",
-        },
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: {
-                    alt: "",
-                    id: "https://picsum.photos/id/870/536/354?grayscale&blur=2",
-                    name: "href",
-                },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "work/seapoint",
-        },
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: { alt: "", id: "DSC_3961.png", name: "repo" },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "work/seapoint",
-        },
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: {
-                    alt: "",
-                    id: "https://picsum.photos/seed/picsum/536/354",
-                    name: "href",
-                },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "work/seapoint",
-        },
-        {
-            content: [],
-            date: new Date(),
-            description: "",
-            jsonLD: null,
-            mainImage: {
-                service: {
-                    alt: "",
-                    id: "https://picsum.photos/id/870/536/354?grayscale&blur=2",
-                    name: "href",
-                },
-            },
-            seo_image: "",
-            tags: [{ title: "Sports", weight: 0 }],
-            title: "Seapoint Rugby Club",
-            title_override: undefined,
-            url: "work/seapoint",
-        },
-    ];
+    export let items: Array<portfolio_page>;
     var itemsContainer: HTMLElement;
     let projectItems: HTMLElement[] = [];
     var startDegree = 5;
@@ -147,7 +46,7 @@
             class="h-[80vh] md:h-[70vh] w-[70vw] md:w-[90vw] flex sticky overflow-clip flex-col justify-between p-7"
         >
             <div class="flex w-full z-20 justify-between">
-                <span class="lowercase">{item.date.getFullYear()}</span>
+                <span class="lowercase">{item.date}</span>
                 <span class="lowercase">{item.tags[0].title}</span>
             </div>
             {#if item.mainImage.service.name === "repo"}

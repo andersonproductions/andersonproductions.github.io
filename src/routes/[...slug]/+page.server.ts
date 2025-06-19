@@ -40,7 +40,11 @@ export const load: PageLoad = ({ params }) => {
   let md: string | null = null;
   if (pageData.__typename === "markdown_page" && pageData.fileName) {
     try {
-      md = fs.readFileSync(pageData.fileName, "utf-8");
+      const markdownPath = path.join(
+        path.dirname(matchedFile),
+        pageData.fileName,
+      );
+      md = fs.readFileSync(markdownPath, "utf-8");
     } catch (error) {
       console.error(`Error reading markdown file:`, error);
     }

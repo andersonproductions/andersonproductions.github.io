@@ -28,6 +28,9 @@
   "dependencies": {
     "@splidejs/svelte-splide": "^0.2.9",
     "@types/gsap": "^3.0.0",
-    "gsap": "^3.13.0"
+    "gsap": "^3.13.0",
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-parse": "^11.0.0"
   }
 }

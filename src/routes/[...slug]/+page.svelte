@@ -13,4 +13,4 @@
             : data.pageData.title + " | Anderson Productions"}</title
     >
 </svelte:head>
-<DynamicPage data={data.pageData} />
+<DynamicPage data={data.pageData} md={data.markdownData} />

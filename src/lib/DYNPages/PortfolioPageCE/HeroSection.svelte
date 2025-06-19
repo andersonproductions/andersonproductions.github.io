@@ -8,7 +8,7 @@
 </script>
 
 <section
-    class="w-[100vw] h-[95vh] flex align-bottom p-8 overflow-clip relative"
+    class="w-[100vw] h-[95vh] flex align-bottom p-8 overflow-clip relative items-end"
 >
     <div class="relative flex flex-col z-20">
         <span>{eyebrow}</span>

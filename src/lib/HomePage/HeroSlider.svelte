@@ -37,6 +37,21 @@
                             alt={item.alt}
                             src={"assets/" + item.id}
                         />
+                        <svelte:element
+                            this={"script"}
+                            type="application/ld+json"
+                            >{JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "ImageObject",
+                                contentUrl: "assets/" + item.id,
+                                creator: {
+                                    "@type": "Person",
+                                    name: "Thibaut Anderson",
+                                },
+                                creditText:
+                                    "©Anderson Productions/Thibaut Anderson",
+                            })}</svelte:element
+                        >
                     {/if}
                     {#if item.name === "href"}
                         <img alt={item.alt} src={item.id} />
