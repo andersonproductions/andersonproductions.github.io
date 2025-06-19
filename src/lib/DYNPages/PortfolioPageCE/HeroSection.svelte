@@ -12,7 +12,7 @@
 >
     <div class="relative flex flex-col z-20">
         <span>{eyebrow}</span>
-        <h1>{title}</h1>
+        <h1 class="text-4xl">{title}</h1>
     </div>
     <ImageComp
         class="w-full h-full absolute top-0 left-0 right-0 bottom-0 object-cover"
