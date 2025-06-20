@@ -30,7 +30,7 @@
     <br />
 {:else if block.__typename == "profile_card"}
     <div class="flex flex-col items-start max-w-96">
-        <img src={block.image} />
+        <img class="aspect-[3/4] object-cover" src={block.image} />
         <p class="text-start pt-2">
             <span class="uppercase font-bold text-2xl">{block.name}</span><br
             />{block.role}
