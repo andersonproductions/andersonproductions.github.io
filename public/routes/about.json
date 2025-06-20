@@ -39,7 +39,7 @@
           "__typename": "profile_card",
           "name": "Thibaut Anderson",
           "role": "Founder & Creative Director",
-          "image": "/team-images/thibaut.jpg"
+          "image": "/assets/team-images/thibaut.jpg"
         }
       ]
     }
