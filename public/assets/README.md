@@ -3,21 +3,20 @@ This folder contains all the uncompressed assets in the anderson productions web
 
 ```mermaid
 flowchart TD
-A(["BUILD REQ"])
-C(["Check DB for prevoius hashes"])
-B(["Search for all IMGS"])
-D(["Add raw image data into db with hash"])
-E(["Query all IMGs"])
-F(["Create IMG Versions"])
-G(["Write all images + styles to static folder"])
-H(["Create JSON with all image data"])
-I(["Write to lib for querying"])
-J(["Call standard build fn"])
-    A --> B
-    B --> C
-    C --> D
-    D --> E --> F --> G
-
-E --> H --> I
-I & G --> J
+ subgraph s1["Create IMG Versions"]
+        F(["Strip unnecessary metadata"])
+        K(["Add new metadata"])
+        L(["Sign image with content creds"])
+        F --> K
+        K -.-> L
+  end
+    A(["BUILD REQ"]) --> B(["Search for all IMGS"])
+    B --> C(["Check DB for prevoius hashes"])
+    C --> D(["Add raw image data into db with hash"])
+    D --> E(["Query all IMGs"])
+    E --> s1 & H(["Create JSON with all image data"])
+    s1 --> G(["Write all images + styles to static folder"])
+    H --> I(["Write to lib for querying"])
+    I --> J(["Call standard build fn"])
+    G --> J
 ```
