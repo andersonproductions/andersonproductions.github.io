@@ -20,3 +20,16 @@ flowchart TD
     I --> J(["Call standard build fn"])
     G --> J
 ```
+
+## Image styles
+```toml
+[[styles]]
+name = "small"                   # the name of the image style displayed in the uri eg: https://example.com/assets/[style.name]/[imageId].[imageMime]
+sys_name = "small_max_width_200"
+width = 200
+height =                         # optional
+effect = "scale_crop"            # the operation applied on the image
+compession = 20                  # the percent compession applied to the image
+mimes = ["webp", "og"]           # optional
+focal_point_crop = true          # optional
+```

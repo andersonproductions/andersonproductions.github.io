@@ -1,0 +1,92 @@
+[[styles]]
+name = "small"
+sys_name = "small_max_width_200"
+width = 200
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "small_200_200"
+sys_name = "small_width_height_200"
+width = 200
+height = 200
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "480_480"
+sys_name = "width_height_480_480"
+width = 480
+height = 480
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "480"
+sys_name = "max_width_480"
+width = 480
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "500_500"
+sys_name = "width_500_height_500"
+width = 500
+height = 500
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "1000"
+sys_name = "width_1000"
+width = 1000
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "1500"
+sys_name = "width_1500"
+width = 1500
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "1800"
+sys_name = "width_1500"
+width = 1800
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "1080"
+sys_name = "width_1080"
+width = 1080
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
+
+[[styles]]
+name = "2000"
+sys_name = "width_2000"
+width = 2000
+effect = "scale_crop"
+compession = 20
+mimes = ["webp", "og"]
+focal_point_crop = true
