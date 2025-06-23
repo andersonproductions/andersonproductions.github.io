@@ -1,0 +1,21 @@
+{
+  "name": "ap_image_service",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@libsql/client": "^0.15.9",
+    "@types/node": "^24.0.3",
+    "dotenv": "^16.5.0",
+    "drizzle-kit": "^0.31.1",
+    "drizzle-orm": "^0.44.2",
+    "exifr": "^7.1.3",
+    "uuid": "^11.1.0"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
